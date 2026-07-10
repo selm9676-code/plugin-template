@@ -20,6 +20,9 @@ jobs:
 
             - run: npm install --global pnpm
 
+            - name: Approve builds for native dependencies
+              run: pnpm approve-builds
+
             - name: Install deps
               run: pnpm m i
 
